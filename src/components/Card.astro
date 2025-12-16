@@ -1,0 +1,17 @@
+---
+
+const { heading, desc, image, content } = Astro.props
+---
+
+
+<div class="card">
+  <h3>{heading}</h3>
+  <h5>{desc}</h5>
+  <div class="fakeimg">
+    <picture>
+      <source srcset={image} media="(min-width: 700px)" />
+      <image src={image} alt="Sunset, Sea, Paddle image">
+    </picture>
+  </div>
+  <slot />
+</div>
