@@ -3,6 +3,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Nav from '../components/Nav.astro';
 
+const baseURL = import.meta.env.BASE_URL;
 
 ---
 
@@ -14,7 +15,8 @@ import Nav from '../components/Nav.astro';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro Basics</title>
-		<link rel="stylesheet" href="/css/styles.css" />
+		<base href={baseURL} /> <!-- required for links to resolve correctly when GitHub Pages -->
+		<link rel="stylesheet" href="css/styles.css" />
 	</head>
 	<body>
 		<Header />
