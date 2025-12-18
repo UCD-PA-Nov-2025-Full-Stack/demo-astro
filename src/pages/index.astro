@@ -11,12 +11,12 @@ import Card from '../components/Card.astro'
 
 <Layout>
 	<main>
-		<Card heading="TITLE HEADING 1" desc="Title description, Dec 7, 2017" image="/images/sunset-8283538_1280.webp">
+		<!-- make sure all image url are relative links, i.e. start with ./ -->
+		<Card heading="TITLE HEADING 1" desc="Title description, Dec 7, 2017" image="./images/sunset-8283538_1280.webp">
 			<p>Some text.. 1</p> 
 			<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 			<p><i>Sunt in culpa qui officia </i>deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span>Ut enim ad </span>minim veniam, quis nostrud exercitation ullamco.</p>
 		</Card>
-		<!-- make sure all image url are relative links, i.e. start with ./ -->
 		<Card heading="Title Heading 2" desc="Title description, Dec 7, 2025" image="./images/sunset-8283538_1280.webp">
 			<p>Some text.. 2</p> 
 			<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
