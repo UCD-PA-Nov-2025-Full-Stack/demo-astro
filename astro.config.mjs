@@ -7,7 +7,7 @@ import { defineConfig } from 'astro/config';
 // see https://docs.astro.build/en/guides/deploy/github/
 export default defineConfig({
   site: 'https://ucd-pa-nov-2025-full-stack.github.io',
-  base: '/demo-astro',
+  base: '/demo-astro/',
 });
 
 
